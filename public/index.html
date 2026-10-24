@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Calorie log</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <p class="eyebrow">Today</p>
+        <h1>Calorie log</h1>
+        <p id="today" class="date"></p>
+      </header>
+
+      <section class="total" aria-live="polite">
+        <p id="total" class="total-number">0</p>
+        <p class="total-label">calories</p>
+      </section>
+
+      <form id="log-form">
+        <label>
+          Food
+          <input name="name" type="text" maxlength="80" required autocomplete="off" />
+        </label>
+        <label>
+          Calories
+          <input name="calories" type="number" inputmode="numeric" min="0" step="1" required />
+        </label>
+        <button type="submit">Add</button>
+        <p id="form-error" class="error" role="alert" hidden></p>
+      </form>
+
+      <p id="empty" class="empty">Nothing logged yet. Add the first food above.</p>
+      <ul id="entries"></ul>
+    </main>
+    <script src="/app.js"></script>
+  </body>
+</html>

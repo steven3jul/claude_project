@@ -1,7 +1,7 @@
 {
   "name": "claude-course-starter",
   "version": "1.0.0",
-  "description": "Starter Express API for the Claude Code course projects.",
+  "description": "Simple local calorie log.",
   "main": "server.js",
   "scripts": {
     "dev": "node --watch server.js",
